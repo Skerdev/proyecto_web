@@ -1,0 +1,91 @@
+*{
+    box-sizing: border-box;
+    padding: o;
+    margin: o;
+}
+.borde{
+    border: 1px solid gray;
+}
+.titulo{
+    height: 70px;
+}
+.CONTENEDOR{
+    width: 95%;
+    max-width: 1280PX;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+nav{
+    height: 70px;
+    display: flex;
+    /* flex-direction: row;
+    flex-wrap: wrap; */
+    flex-flow: row nowrap;
+
+}
+.logo{
+    flex: 20%;
+
+}
+.menu{
+    flex: 65%;
+}
+.ingreso{
+    flex: 15%;
+}
+header, section{
+    height: 500px;
+}
+.portafolio{
+    display: flex;
+    flex-flow: row nowrap;
+
+}
+.port-izq{
+    flex: 1;
+}
+.port-cnt{
+    flex: 1;
+}
+.port-der{
+    flex: 1;
+}
+.correo{
+    flex: 1;
+}
+/*Tablet*/
+@media (max-width :992px){
+    nav{
+        height: auto;
+        flex-flow: row nowrap;
+    }
+    .logo{
+        flex: 100%;
+        height: 50px;;
+    }
+    .menu{
+        flex: 65%;
+        height: 50px;
+    }
+    .ingreso{
+        flex: 25%;
+        height: 50px;
+    }
+}
+/*Celular*/
+@media ( max-width:576px){
+    nav{
+        height: auto;
+        flex-flow: row nowrap;
+    }
+    .logo,
+    .menu,
+    .ingreso{
+        flex: 100%;
+
+    }
+
+}

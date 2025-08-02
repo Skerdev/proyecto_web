@@ -5,7 +5,10 @@
 }
 
 .borde{
-    border: 5px solid gray;
+    border: 2px solid gray;
+}
+.titulo{
+    height: 70px;
 }
 .contenedor{
     width: 100%;
