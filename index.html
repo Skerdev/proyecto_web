@@ -4,40 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto</title>
-    <link rel="stylesheet" href="landing/assets/css/styles_felxboxmodel.css">
+    <link rel="stylesheet"href="landing/assets/css/bootstrap.min.css">
+    <link rel="stylesheet"href="landing/assets/css/styles_bootstrapmodel.css">
+    <!-- <link rel="stylesheet" href="landing/assets/css/styles_felxboxmodel.css"> -->
 </head>
 <body>
-    <div class="contenedor">
-        <nav>
-            <div class="borde logo">Logo</div>
-            <div class="borde menu">menu</div>
-            <div class="borde ingreso">ingreso</div>
+    <div class="container">
+        <nav class="row">
+            <div class="border col-sm-10 col-md-5 col-lg-2 logo">Logo</div>
+            <div class="border col-sm-10 col-md-10 col-lg-8 menu">menu</div>
+            <div class="border col-sm-10 col-md-2 col-lg-2 ingreso">ingreso</div>
         </nav>
-        <header class="borde"></header>
-        <div class="borde titulo">Titulo</div>
-        <section class="portafolio">
-            <div class="borde port-izq">col1</div>
-            <div class="borde port-cnt">col2</div>
-            <div class="borde port-der">col3</div>
-        </section>
-        <div class="borde titulo"></div>
-        <div class="borde titulo">Informacion</div>        
-        <section class="borde nosotros">sobre nosotros</section>
-        <div class="contacto">Contacto</div>
+        <header class="border row">
+            <div class="col-12">Encabezado</div>
+        </header>
+        <div class="border titulo row">
+            <div class="col-12">Portafolio</div>
+
+        </div>
         
-        <section class="borde_contacto">
+        <section class="row">
+            <div class="border col-4">col1</div>
+            <div class="border col-4">col2</div>
+            <div class="border col-4">col3</div>
+        </section>
+        <div class="border titulo row"></div>
+        <div class="border titulo row">Informacion</div>        
+        <section class="border nosotros row">sobre nosotros</section>
+        <div class="border contacto row">Contacto</div>
+        
+        <!-- <section class="border_contacto">
             <div class="formulario">
                 <div class="caja">contacto@correo.com</div>
                 <div class="caja">3123114128</div>
                 <div class="caja">Calle 80a</div>
             </div>
             <div class="mapa">
-            <!-- Aquí puede ir una imagen o iframe -->
-             <img src="mapa.png" alt="Mapa" style="width:100%; height:100%;">
+            Aquí puede ir una imagen o iframe -->
+             <!-- <img src="mapa.png" alt="Mapa" style="width:100%; height:100%;">
             </div>
         </section>
-        
-        <footer class="borde"></footer>
+         -->
+        <section class="row">
+            <div class="border col-4 p-1 h-50">izq</div>
+            <div class="border col-4 p-1 h-50">cen</div>
+            <div class="border col-4 p-1 h-50">der</div>
+        </section>
+        <footer class="border row">pie de pagina</footer>
+        <script src="landing/assets/js/bootstrap.bundle.min.js"></script>
         <script src="landing/assets/js/script.js"></script>
 
 
